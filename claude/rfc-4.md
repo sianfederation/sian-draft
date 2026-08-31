@@ -52,6 +52,14 @@ For actions in the IRL-meetup class:
 
 Sybil resistance (this section) and spam resistance (§2) are the same underlying mechanism — imposing non-zero cost on an action — applied at two different thresholds. Implementers SHOULD reuse a single cost-of-action module across both rather than building redundant subsystems.
 
+### 3.4 Migration Statements are a Sybil-adjacent action
+
+[RFC-1 ](./rfc-1.md)§6.2 defines a Migration Statement allowing a `did:key` avatar to be replaced while carrying forward trust and reputation. Because this is a mechanism for _inheriting_ trust rather than earning it fresh, it MUST be treated as an action requiring cost, not free housekeeping:
+
+- A Migration Statement that carries forward a **damaged reputation** (per §2.3 bonding/flag history) SHOULD carry that damage to the new DID as well, not discard it — otherwise migration becomes a laundering path around reputation loss, defeating §3.1's premise entirely.
+- A Migration Statement that carries forward a **positive reputation** into a context requiring step-up verification (§3.2) SHOULD still require the identity-tier check appropriate to the new DID's method, not inherit an exemption from the old one.
+- Implementers SHOULD apply the same rate-limit or cost mechanism (§2.1–§2.3) to migration frequency as to identity creation itself — an avatar migrating repeatedly in a short window is exhibiting the same evasion pattern as rapid Sybil creation and SHOULD be treated accordingly.
+
 ## 4. Security Considerations
 
 - No mechanism here is failsafe; PoW and bonding are both defeatable at sufficient attacker resource levels. This RFC raises the cost of abuse, it does not eliminate it, and the [RFC-0](./rfc-0.md) abstract's framing ("does this make the idea infeasible?") should be read against that limitation, not against a claim of solved safety.
