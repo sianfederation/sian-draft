@@ -1,4 +1,4 @@
-# RFC-0: Federated Social Network
+# RFC-0: Federated Interest-driven, Avatar-based Social Network
 
 **Authors**: Johan Segerfeldt
 **Date Published**: Aug 30 2026
@@ -16,7 +16,7 @@ The grid node may be a small device or a gigantic structure. It might only facil
 
 The grid node can be connected to other grid nodes — probably via existing infrastructure such as the internet. This can allow information to traverse long distances. An establishment (a company, a government agency, a sports association, an interest association…) might advertise their existence or a social event on a specific grid node/billboard. Or on all billboards within a certain area.
 
-The grid node might also contain information about activities that occur at that very moment, such as a basketball team looking for opponents in a game or a user wanting a friend to accompany them on a trip. This information might be spread to a radius of a few kilometers or more if there is reason to believe that others would be willing to travel that far.
+The grid node might also contain information about activities that occur at that very moment, such as a basketball team looking for opponents in a friendly game or a user wanting a buddy to accompany them on a trip. This information might be spread to a radius of a few kilometers or more if there is reason to believe that others would be willing to travel that far to meet up.
 
 The grid nodes could also be used as cell towers of a sort — if the internet directly is not a better fit — and allow users to communicate over distances.
 
