@@ -14,11 +14,11 @@ Avatars MUST be identified by a [Decentralized Identifier (DID)](https://www.w3.
 
 ### 1.1 Recognized methods (v1)
 
-|Method|Resolution|Cost to create|Rotation/Revocation|Recommended use|
-|---|---|---|---|---|
-|`did:key`|None (self-certifying)|Free|Not supported — new key implies new DID|Default for casual/low-stakes avatars|
-|`did:peer`|Pairwise, exchanged at handshake|Free|Supported via signed rotation log|Long-lived pairwise relationships between two avatars|
-|`did:web`|DNS + HTTPS|Cost of domain ownership|Supported via document update|Organizations, venues, avatars wanting discoverability|
+| Method     | Resolution                       | Cost to create           | Rotation/Revocation                     | Recommended use                                        |
+| ---------- | -------------------------------- | ------------------------ | --------------------------------------- | ------------------------------------------------------ |
+| `did:key`  | None (self-certifying)           | Free                     | Not supported — new key implies new DID | Default for casual/low-stakes avatars                  |
+| `did:peer` | Pairwise, exchanged at handshake | Free                     | Supported via signed rotation log       | Long-lived pairwise relationships between two avatars  |
+| `did:web`  | DNS + HTTPS                      | Cost of domain ownership | Supported via document update           | Organizations, venues, avatars wanting discoverability |
 
 Implementations MUST support `did:key` as the mandatory-to-implement baseline (P4, [RFC-0](./rfc-0.md)). Support for other methods is OPTIONAL but SHOULD be advertised during handshake so peers know what to expect.
 

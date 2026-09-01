@@ -44,19 +44,15 @@ Because avatar creation is cheap under `did:key` ([RFC-1](./rfc-1.md) §1.2), an
 
 ### 3.2 Graduated disclosure for meetup-class actions
 
-For actions in the IRL-meetup class:
-
-- Initial broadcast/match reveals coarse information only (e.g., neighborhood-level location, activity category) regardless of DID method.
-- Precise location/time is disclosed only after **mutual, explicit opt-in from both avatars**, at which point the identity tier requirement (§1 table) is enforced — a low-trust-tier avatar attempting to resolve precise coordination SHOULD trigger a step-up prompt (e.g., require a `did:peer`/`did:web`-class identity, or a posted bond) before disclosure proceeds.
-- Venue-operated grid nodes ([RFC-2](./rfc-2.md) §1) MAY enforce stricter local policy for any exchange that resolves to "meet at this venue," since the venue carries real-world liability exposure and has direct incentive to enforce it ([RFC-0](./rfc-0.md) P5).
+For actions in the IRL-meetup class, disclosure follows the concrete reveal ladder (R0–R7) specified in [RFC-6](./rfc-6.md), gated by mutual per-rung consent and identity-tier step-up as defined there. In summary: initial broadcast/match reveals coarse, categorical information only ([RFC-6](./rfc-6.md) R0–R2a); anything more specific — stated relational intent, relative proximity, direct communication, personal or contact information — requires explicit mutual consent per rung ([RFC-6](./rfc-6.md) R2b–R7), with identity-tier step-up ([RFC-1](./rfc-1.md) §1.2) enforced starting at [RFC-6](./rfc-6.md) R3/R4. Venue-operated grid nodes ([RFC-2](./rfc-2.md) §1) MAY enforce stricter local policy for any exchange that resolves to "meet at this venue," since the venue carries real-world liability exposure and has direct incentive to enforce it ([RFC-0](./rfc-0.md) P5).
 
 ### 3.3 Non-forgeable cost as the common primitive
 
-[Sybil](https://en.wikipedia.org/wiki/Sybil_attack) resistance (this section) and spam resistance (§2) are the same underlying mechanism — imposing non-zero cost on an action — applied at two different thresholds. Implementers SHOULD reuse a single cost-of-action module across both rather than building redundant subsystems.
+Sybil resistance (this section) and spam resistance (§2) are the same underlying mechanism — imposing non-zero cost on an action — applied at two different thresholds. Implementers SHOULD reuse a single cost-of-action module across both rather than building redundant subsystems.
 
 ### 3.4 Migration Statements are a Sybil-adjacent action
 
-[RFC-1 ](./rfc-1.md)§6.2 defines a Migration Statement allowing a `did:key` avatar to be replaced while carrying forward trust and reputation. Because this is a mechanism for _inheriting_ trust rather than earning it fresh, it MUST be treated as an action requiring cost, not free housekeeping:
+[RFC-1](./rfc-1.md) §6.2 defines a Migration Statement allowing a `did:key` avatar to be replaced while carrying forward trust and reputation. Because this is a mechanism for _inheriting_ trust rather than earning it fresh, it MUST be treated as an action requiring cost, not free housekeeping:
 
 - A Migration Statement that carries forward a **damaged reputation** (per §2.3 bonding/flag history) SHOULD carry that damage to the new DID as well, not discard it — otherwise migration becomes a laundering path around reputation loss, defeating §3.1's premise entirely.
 - A Migration Statement that carries forward a **positive reputation** into a context requiring step-up verification (§3.2) SHOULD still require the identity-tier check appropriate to the new DID's method, not inherit an exemption from the old one.
