@@ -1,6 +1,8 @@
 # RFC-4: Cost-of-Action — Spam Resistance and Accountability
 
-**Status:** Draft **Category:** Standards Track **Depends on:** [RFC-0](./rfc-0.md) (Principles P2, P5), [RFC-1](./rfc-1.md) (Identity), [RFC-2](./rfc-2.md) (Propagation)
+**Status:** Draft
+**Category:** Standards Track
+**Depends on:** [RFC-0](./rfc-0.md) (Principles P2, P5), [RFC-1](./rfc-1.md) (Identity), [RFC-2](./rfc-2.md) (Propagation)
 
 ## Abstract
 
@@ -50,7 +52,7 @@ For actions in the IRL-meetup class:
 
 ### 3.3 Non-forgeable cost as the common primitive
 
-Sybil resistance (this section) and spam resistance (§2) are the same underlying mechanism — imposing non-zero cost on an action — applied at two different thresholds. Implementers SHOULD reuse a single cost-of-action module across both rather than building redundant subsystems.
+[Sybil](https://en.wikipedia.org/wiki/Sybil_attack) resistance (this section) and spam resistance (§2) are the same underlying mechanism — imposing non-zero cost on an action — applied at two different thresholds. Implementers SHOULD reuse a single cost-of-action module across both rather than building redundant subsystems.
 
 ### 3.4 Migration Statements are a Sybil-adjacent action
 

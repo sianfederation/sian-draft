@@ -1,6 +1,8 @@
 # RFC-1: Avatar Identity and the Signed Interest Envelope
 
-**Status:** Draft **Category:** Standards Track **Depends on:** [RFC-0](./rfc-0.md) (Terminology)
+**Status:** Draft
+**Category:** Standards Track
+**Depends on:** [RFC-0](./rfc-0.md) (Terminology)
 
 ## Abstract
 
@@ -68,7 +70,7 @@ Because envelopes may be relayed through untrusted grid nodes ([RFC-2](./rfc-2.m
 
 ## 4. Security Considerations
 
-- **Sybil generation**: `did:key` avatars are free to create in unlimited quantity. This is intentional (low-friction pseudonymity is a design goal) but interacts directly with abuse resistance; see [RFC-4](./rfc-4.md).
+- **[Sybil](https://en.wikipedia.org/wiki/Sybil_attack) generation**: `did:key` avatars are free to create in unlimited quantity. This is intentional (low-friction pseudonymity is a design goal) but interacts directly with abuse resistance; see [RFC-4](./rfc-4.md).
 - **Downgrade attacks**: bounding algorithm agility to a small MTI set with explicit, non-silent opt-in for anything else mitigates but does not eliminate this risk.
 - **Key compromise on `did:key`**: no rotation is possible by design; a compromised `did:key` avatar's history and reputation cannot be recovered under a new key. Avatars requiring rotation guarantees SHOULD use `did:peer` or `did:web`.
 

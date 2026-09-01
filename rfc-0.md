@@ -1,11 +1,14 @@
 # RFC-0: Federated Social Network
 
-Based on the internet practice of [RFCs](https://en.wikipedia.org/wiki/Request_for_Comments) — and perhaps later [BCPs](https://en.wikipedia.org/wiki/Best_Current_Practice) — I wish to propose a distributed/federated system for socially connecting users in a pseudonymous fashion based on interests and proximity.
+**Authors**: Johan Segerfeldt
+**Date Published**: Aug 30 2026
+
+Based on the IETF practice of [RFCs](https://en.wikipedia.org/wiki/Request_for_Comments) — and perhaps later [BCPs](https://en.wikipedia.org/wiki/Best_Current_Practice) — I wish to propose a distributed/federated system for socially connecting users in a pseudonymous fashion based on interests and proximity.
 
 A user would be identified through an avatar, a character that represents their interests and general disposition. The social network is established avtar-to-avatar, not user-to-user, thereby creating a form of anonymity. Users can create multiple avatars (representing different sets of interests and different exposed personalities) that they can use in different contexts.
 
 > [!warning]
-> Anonymity in social contexts can be dangerous. People might feel free to issue threats, and might arrange IRL meetings where they commit violence. Safeguards would have to be taken — or does this make the idea infeasible?
+> Anonymity in social contexts can be dangerous. Individuals might feel free to issue threats, or might arrange IRL meetings where they can commit violence. Safeguards would have to be taken — or does this make the entire effort infeasible?
 
 A local venue (an office, a store, a sports facility…) may put up a “grid node.” This node is a sort of digital / wireless billboard. When a user approaches the billboard with a wireless device, information is exchanged regarding events and establishments in the general vicinity. The device can use this information to alert the user if any of those activities match their interests and current disposition.
 

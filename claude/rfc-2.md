@@ -1,6 +1,8 @@
 # RFC-2: Grid Node Discovery, Transport, and Propagation
 
-**Status:** Draft **Category:** Standards Track **Depends on:** [RFC-0](./rfc-0.md) (Terminology), [RFC-1](./rfc-1.md) (Envelope format)
+**Status:** Draft
+**Category:** Standards Track
+**Depends on:** [RFC-0](./rfc-0.md) (Terminology), [RFC-1](./rfc-1.md) (Envelope format)
 
 ## Abstract
 
