@@ -1,6 +1,6 @@
 # RFC-0: Federated Interest-driven, Avatar-based Social Network
 
-**Authors**: Johan Segerfeldt
+**Author**: Johan Segerfeldt
 **Date Published**: Aug 30 2026
 
 Based on the IETF practice of [RFCs](https://en.wikipedia.org/wiki/Request_for_Comments) — and perhaps later [BCPs](https://en.wikipedia.org/wiki/Best_Current_Practice) — I wish to propose a distributed/federated system for socially connecting users in a pseudonymous fashion based on interests and proximity.
