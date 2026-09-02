@@ -1,3 +1,6 @@
+<!-- markdownlint-disable MD041 MD033 -->
+<img src="../images/sian-150.png" alt="Rawry" style="float: right; margin: 10px;">
+
 # RFC-1: Avatar Identity and the Signed Interest Envelope
 
 **Status:** Draft

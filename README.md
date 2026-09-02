@@ -1,3 +1,6 @@
+<!-- markdownlint-disable MD041 MD033 -->
+<img src="./images/sian-150.png" alt="Rawry" style="float: right; margin: 10px;">
+
 # SIÂN: a Federated Social Interest and Activity Network
 
 This is the “RFC Editor” of a new social networking system. Start with [RFC-0](./rfc-0.md) for an introduction to the idea.
