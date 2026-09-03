@@ -5,11 +5,11 @@
 
 **Status:** AI-Generated Draft
 **Category:** Standards Track
-**Depends on:** [RFC-0](./rfc-0.md) (Terminology), [RFC-1](./rfc-1.md) (Envelope payload)
+**Depends on:** [RFC-0](./draft-claude.ai-0.md) (Terminology), [RFC-1](./draft-claude.ai-1.md) (Envelope payload)
 
 ## Abstract
 
-This document specifies the `InterestDocument` payload carried inside the signed envelope ([RFC-1](./rfc-1.md) §3) and the matching strategy used across devices that have no prior coordination on vocabulary.
+This document specifies the `InterestDocument` payload carried inside the signed envelope ([RFC-1](./draft-claude.ai-1.md) §3) and the matching strategy used across devices that have no prior coordination on vocabulary.
 
 ## 1. InterestDocument Schema
 
@@ -24,9 +24,9 @@ InterestDocument {
 
 ## 2. Canonical Tag Registry
 
-A small, versioned, forkable registry of `CanonicalTag` values (e.g., `sports.basketball.pickup`, `food.lunch`, `social.travel-companion`) is maintained as a community-amendable BCP ([RFC-0](./rfc-0.md) §1), analogous to IANA protocol-parameter registries. Implementations MUST support matching on the current published core registry.
+A small, versioned, forkable registry of `CanonicalTag` values (e.g., `sports.basketball.pickup`, `food.lunch`, `social.travel-companion`) is maintained as a community-amendable BCP ([RFC-0](./draft-claude.ai-0.md) §1), analogous to IANA protocol-parameter registries. Implementations MUST support matching on the current published core registry.
 
-- Amendments follow the same voluntary-adoption BCP process referenced in [RFC-0](./rfc-0.md) §1: proposed, discussed, and adopted opt-in by implementers — no central authority can force an update.
+- Amendments follow the same voluntary-adoption BCP process referenced in [RFC-0](./draft-claude.ai-0.md) §1: proposed, discussed, and adopted opt-in by implementers — no central authority can force an update.
 - Registry entries SHOULD be hierarchical (parent/child) so partial matches (e.g., `sports.*`) are possible without exact tag agreement.
 
 ## 3. Fallback Matching for `free_tags`
@@ -39,7 +39,7 @@ Tags outside the core registry MUST NOT be silently dropped, but MUST NOT be tre
 ## 4. Security Considerations
 
 - **Ontology poisoning**: a malicious or careless registry amendment could degrade matching quality network-wide if widely adopted. Because adoption is voluntary and versioned, implementations SHOULD pin to a specific registry version and require explicit user/operator action to adopt a new one, rather than auto-updating silently.
-- **Embedding model provenance**: if fuzzy matching is used, the embedding model itself becomes a de facto coordination point ([RFC-0](./rfc-0.md) §4 risk: "any pluggable component can quietly recentralize"). Implementations SHOULD disclose which model/version produced a fuzzy match.
+- **Embedding model provenance**: if fuzzy matching is used, the embedding model itself becomes a de facto coordination point ([RFC-0](./draft-claude.ai-0.md) §4 risk: "any pluggable component can quietly recentralize"). Implementations SHOULD disclose which model/version produced a fuzzy match.
 
 ## 5. Open Issues
 

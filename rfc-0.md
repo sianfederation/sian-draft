@@ -3,6 +3,8 @@
 
 # RFC-0: Federated Interest-driven, Avatar-based Social Network
 
+**Status:** N/A
+**Category:** Informational
 **Author**: Johan Segerfeldt
 **Date Published**: Aug 30 2026
 
