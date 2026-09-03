@@ -22,3 +22,4 @@ There is also a set of drafts for review. The acceptance process is not yet defi
 - [Claude-4](./drafts/draft-claude.ai-4.md): Cost-of-Action — Spam Resistance and Accountability
 - [Claude-5](./drafts/draft-claude.ai-5.md): The `sian:` URI Scheme
 - [Claude-6](./drafts/draft-claude.ai-6.md): The Reveal Ladder — Progressive Disclosure Between Avatars
+- [Claude-7](./drafts/draft-claude.ai-7.md): Discovery and Ranking Specification
