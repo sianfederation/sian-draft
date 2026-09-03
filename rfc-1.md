@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 MD033 -->
-<img src="./images/sian-150.png" alt="Rawry" style="float: right; margin: 10px;">
+<img src="./images/sian.svg" alt="Rawry" style="float: right; margin: 10px;">
 
 # RFC-1: Siân
 
@@ -13,3 +13,6 @@ The initials spell out the acronym F-SIAN, which matches the spelling of the Wel
 Since github.com /sian is already taken, the community has claimed the organization name <https://github.com/sianfederation>
 
 If we define a new internet protocol, we could use `sian:` as protocol id in URIs.
+
+> And yes: _"the project accidentally named itself Siân"_ is now officially part of the story. 😄
+> — Chat GPT

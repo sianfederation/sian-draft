@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 MD033 -->
-<img src="../images/sian-150.png" alt="Rawry" style="float: right; margin: 10px;">
+<img src="../images/sian.svg" alt="Rawry" style="float: right; margin: 10px;">
 
 # RFC-5: The `sian:` URI Scheme
 
