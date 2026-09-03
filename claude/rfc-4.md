@@ -3,7 +3,7 @@
 
 # RFC-4: Cost-of-Action — Spam Resistance and Accountability
 
-**Status:** Draft
+**Status:** AI-Generated Draft
 **Category:** Standards Track
 **Depends on:** [RFC-0](./rfc-0.md) (Principles P2, P5), [RFC-1](./rfc-1.md) (Identity), [RFC-2](./rfc-2.md) (Propagation)
 

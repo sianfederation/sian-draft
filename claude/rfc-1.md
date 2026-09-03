@@ -3,7 +3,7 @@
 
 # RFC-1: Avatar Identity and the Signed Interest Envelope
 
-**Status:** Draft
+**Status:** AI-Generated Draft
 **Category:** Standards Track
 **Depends on:** [RFC-0](./rfc-0.md) (Terminology)
 

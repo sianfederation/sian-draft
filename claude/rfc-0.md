@@ -3,7 +3,7 @@
 
 # RFC-0: Federated Avatar-Based Social Network — Overview and Architecture
 
-**Status:** Draft
+**Status:** AI-Generated Draft
 **Category:** Informational
 **Series:** This document is the entry point to a series (RFC-0 through RFC-4). It defines shared terminology and architecture; normative details live in the sub-RFCs it references.
 

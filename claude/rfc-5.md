@@ -3,7 +3,7 @@
 
 # RFC-5: The `sian:` URI Scheme
 
-**Status:** Draft
+**Status:** AI-Generated Draft
 **Category:** Standards Track
 **Depends on:** [RFC-0](./rfc-0.md) (Terminology), [RFC-1](./rfc-1.md) (DIDs, Envelopes), [RFC-2](./rfc-2.md) (Capability Tokens), [RFC-3](./rfc-3.md) (Interest Documents)
 

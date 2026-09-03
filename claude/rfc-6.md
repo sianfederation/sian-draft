@@ -3,7 +3,7 @@
 
 # RFC-6: The Reveal Ladder — Progressive Disclosure Between Avatars
 
-**Status:** Draft
+**Status:** AI-Generated Draft
 **Category:** Standards Track
 **Depends on:** [RFC-1](./rfc-1.md) (Identity tiers, Envelopes), [RFC-2](./rfc-2.md) (Proximity, Capability tokens), [RFC-3](./rfc-3.md) (Interest matching), [RFC-4](./rfc-4.md) (§3.2 Graduated disclosure — this document is its concrete instantiation)
 
