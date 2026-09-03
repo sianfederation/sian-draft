@@ -23,3 +23,5 @@ There is also a set of drafts for review. The acceptance process is not yet defi
 - [Claude-5](./drafts/draft-claude.ai-5.md): The `sian:` URI Scheme
 - [Claude-6](./drafts/draft-claude.ai-6.md): The Reveal Ladder — Progressive Disclosure Between Avatars
 - [Claude-7](./drafts/draft-claude.ai-7.md): Discovery and Ranking Specification
+- [DRAFT-Johan-0](./drafts/draft-johan-0.md) Atoms and Voluntary Spread
+- [DRAFT-Johan-1](./drafts/draft-johan-1.md) Meaningful Content
