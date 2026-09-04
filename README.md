@@ -25,3 +25,4 @@ There is also a set of drafts for review. The acceptance process is not yet defi
 - [Claude-7](./drafts/draft-claude.ai-7.md): Discovery and Ranking Specification
 - [DRAFT-Johan-0](./drafts/draft-johan-0.md) Atoms and Voluntary Spread
 - [DRAFT-Johan-1](./drafts/draft-johan-1.md) Meaningful Content
+- [DRAFT-Johan-2](./drafts/draft-johan-2.md) Self-Censored Content

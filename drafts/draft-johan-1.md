@@ -3,7 +3,7 @@
 
 # DRAFT-Johan-1: Meaningful Content
 
-The network doesn’t only have to be about activities. It can also host media and other forms of content. The network can become a tool for discovery, not just for local venues, events and activities, but for educational content, grass-root movements, community, mutual-aid networks…
+The network doesn’t only have to be about activities. It can also host media and other forms of content. The network can become a tool for discovery, not just for local venues, events and activities, but for educational content, grass-root movements, community building, mutual-aid networks…
 
 Today, there are for example a lot of creators on YouTube who are worried that Google will disown them for political reasons and take away their source of income. Some are unhappy that the only way to spread their message of resistance is by boosting a corporation that represents the antithesis of what they are trying to achieve. If there was an alternative way to advertise their art, they might have cause to feel more hopeful.
 
