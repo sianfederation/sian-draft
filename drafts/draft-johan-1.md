@@ -15,4 +15,4 @@ Or a bulletin could just contain a haiku or some ancient word of wisdom.
 
 ## Related
 
-- [DRAFT-Johan-0](./draft-johan-0.md) (Atoms and Voluntary Spread)
+- [DRAFT-Johan-0](./draft-johan-0.md) (Bulletins and Voluntary Spread)

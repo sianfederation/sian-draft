@@ -11,4 +11,4 @@ Similar tags can be added to depictions of violence and other content. If a user
 
 ## Related
 
-- [DRAFT-Johan-0](./draft-johan-0.md) (Atoms and Voluntary Spread)
+- [DRAFT-Johan-0](./draft-johan-0.md) (Bulletins and Voluntary Spread)
