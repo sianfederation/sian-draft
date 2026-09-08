@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 MD033 -->
-<img src="../images/sian.svg" alt="Rawry" style="float: right; margin: 10px;">
+<img src="../images/sian.svg" alt="SIÂN" style="float: right; margin: 10px;">
 
 # RFC-6: The Reveal Ladder — Progressive Disclosure Between Avatars
 
