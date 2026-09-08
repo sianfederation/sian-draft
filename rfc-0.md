@@ -13,6 +13,7 @@ Based on the IETF practice of [RFCs](https://en.wikipedia.org/wiki/Request_for_C
 A user would be identified through an avatar, a character that represents their interests and general disposition. The social network is established avtar-to-avatar, not user-to-user, thereby creating a form of anonymity. Users can create multiple avatars (representing different sets of interests and different exposed personalities) that they can use in different contexts.
 
 > [!warning]
+>
 > Anonymity in social contexts can be dangerous. Individuals might feel free to issue threats, or might arrange IRL meetings where they can commit violence. Safeguards would have to be taken — or does this make the entire effort infeasible?
 
 A local venue (an office, a store, a sports facility…) may put up a “grid node.” This node is a sort of digital / wireless billboard. When a user approaches the billboard with a wireless device, information is exchanged regarding events and establishments in the general vicinity. The device can use this information to alert the user if any of those activities match their interests and current disposition.
@@ -26,3 +27,5 @@ The grid node might also contain information about activities that occur at that
 The grid nodes could also be used as cell towers of a sort — if the internet directly is not a better fit — and allow users to communicate over distances.
 
 The user’s device chooses what information is important enough to display to the user. If the user is actively looking for a specific activity (e.g. lunch), that information might be prioritised. Information that originates a long distance away, might be ignored by one user, but important to another.
+<script src="./admonitions.js"></script>
+<link rel="stylesheet" href="./admonitions.css">
