@@ -3,7 +3,7 @@
 
 # RFC-7: Discovery and Ranking Specification
 
-**Status:** Draft
+**Status:** AI-Generated Draft
 **Category:** Standards Track
 **Depends on:** [RFC-0](./draft-claude.ai-0.md) (Architecture), [RFC-1](./draft-claude.ai-1.md) (Avatar Identity), [RFC-3](./draft-claude.ai-3.md) (Interest Ontology), [RFC-4](./draft-claude.ai-4.md) (Cost-of-Action)
 

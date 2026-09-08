@@ -14,13 +14,13 @@ We need to define a process for adding new RFCs (replace this RFC with the draft
 
 We will need well-defined categories. Should e.g. this RFC be sorted under governance? Normative? It defines the rules of the RFC stack itself, not the system described by the RFCs. Those tracks should probably be separated. (Maybe the entire stack can be said to be defining the rules of the system? If so, that would be an “everything” category and redundant.)
 
-Can an RFC be tagged with multiple categorizations or are categories non-overlapping sets?
+Can an RFC be tagged with multiple categorizations or should categories be non-overlapping sets?
 
 How is an RFC added? Can anyone add a new RFC or does it have to go through a vetting process first? What process does the IETF use?
 
-Is this RFC stack redundant? Should we go directly to the IETF RFC Editor instead? Or is it useful to have two separate stacks? Maybe an RFC in this stack can say “publish RFC-X on IETF,” or “propose this change to IETF RFC-Y”?
+Is this entire RFC stack redundant? Should we go directly to the IETF RFC Editor instead? Or is it useful to have two separate stacks? Maybe an RFC in this stack can say “publish RFC-X on IETF,” or “propose this change to IETF RFC-Y”?
 
-Based on the description by Claude.ai ([below](#according-to-claudeai)), maybe we should allow adding draft entries without RFC numbers by PR? (The AI-generated RFCs now follow the pattern `draft-submitter-index-md`.) How they are later converted to RFCs is a question for the community (which does not exist yet).
+Based on the description by Claude.ai ([below](#according-to-claudeai)), there are now “draft” entries on the form `draft-submitter-index-md` in this stack to emulate the first stage of the draft process on IETF. How they should later be converted to RFCs is a question for the community (which does not exist yet).
 
 ## According to Claude.ai
 

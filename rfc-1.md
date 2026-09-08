@@ -18,6 +18,6 @@ The name came about serendipitously from [RFC-0](./rfc-0).
 > And yes: _"the project accidentally named itself Siân"_ is now officially part of the story. 😄
 > — Chat GPT
 
-Since github.com /sian was already taken, the proposed community name is SIÂN Federation, based from the GitHub organization <https://github.com/sianfederation>
+Since github.com\/sian was already taken, the proposed community name is now SIÂN Federation, with its base in the GitHub organization <https://github.com/sianfederation>
 
 If we define a new internet protocol, we could use `sian:` as its protocol id in URIs. See Claude’s [RFC-5](./drafts/draft-claude.ai-5.md) for a detailed draft.

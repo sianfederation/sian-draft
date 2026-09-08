@@ -9,9 +9,9 @@ Today, there are for example a lot of creators on YouTube who are worried that G
 
 The Siân protocols unfortunately cannot help them host their content, but it might make an alternate hosting service more feasible.
 
-[DRAFT-Johan-0](./draft-johan-0.md) suggests that information should spread in the form of *atoms* through the grid nodes. An atom could include a URL to any content (a document/book, a movie, a song…). If the user has a compatible viewer for that type of media — and subscribes to the service or whatever is needed for access — they can consume that content just by activating the link. No algorithm is necessary. No central service that tracks its users.
+[DRAFT-Johan-0](./draft-johan-0.md) suggests that information should spread in the form of *bulletins* through the grid nodes. A bulletin could include a URL to any content (a document/book, a movie, a song…). If the user has a compatible viewer for that type of media — and subscribes to the service or whatever is needed for access — they can consume that content just by activating the link. No algorithm is necessary. No central service that tracks its users.
 
-Or an atom could just contain a haiku or some ancient word of wisdom.
+Or a bulletin could just contain a haiku or some ancient word of wisdom.
 
 ## Related
 
