@@ -8,19 +8,23 @@
 **Author**: Johan Segerfeldt
 **Date Published**: Sep 3 2026
 
-## Abstract
+We need to define a process for adding new RFCs to this stack (replace this RFC with the draft when ready).
 
-We need to define a process for adding new RFCs (replace this RFC with the draft).
+> [!note] Inception and Independency
+>
+> This project was incepted by Azeea AB, but intended for independent stewardship. As long as only Azeea personnel and affiliates are involved, the only official RFCs will be the current three [RFC-0](./rfc-0.md) (the introduction), [RFC-1](./rfc-1.md) (the name), and [RFC-2](./rfc-2.md) (this document). The only valid reason to add more RFCs would be if they are deemed necessary to help the establishment of a federation or a community. All other entries will remain in draft status (without an official RFC number) until at least one unaffiliated party joins the project, the minimum act that can validate the independence of the community.
 
-We will need well-defined categories. Should e.g. this RFC be sorted under governance? Normative? It defines the rules of the RFC stack itself, not the system described by the RFCs. Those tracks should probably be separated. (Maybe the entire stack can be said to be defining the rules of the system? If so, that would be an “everything” category and redundant.)
+We will likely need well-defined categories. Should e.g. this RFC be sorted under governance? Normative? It defines the rules of the RFC stack itself, not the system described by the RFCs. Those tracks should probably be separated. (Maybe the entire stack can be said to be defining the rules of the system? If so, that would be an “everything” category and redundant.)
 
 Can an RFC be tagged with multiple categorizations or should categories be non-overlapping sets?
 
+Should RFCs — and drafts too — be required to follow a template to be considered?
+
 How is an RFC added? Can anyone add a new RFC or does it have to go through a vetting process first? What process does the IETF use?
 
-Is this entire RFC stack redundant? Should we go directly to the IETF RFC Editor instead? Or is it useful to have two separate stacks? Maybe an RFC in this stack can say “publish RFC-X on IETF,” or “propose this change to IETF RFC-Y”?
-
 Based on the description by Claude.ai ([below](#according-to-claudeai)), there are now “draft” entries on the form `draft-submitter-index-md` in this stack to emulate the first stage of the draft process on IETF. How they should later be converted to RFCs is a question for the community (which does not exist yet).
+
+Is this entire RFC stack redundant? Should we go directly to the IETF RFC Editor instead? Or is it useful to have two separate stacks? Maybe an RFC in this stack can say “publish RFC-X with IETF,” or “propose this change to IETF’s RFC-Y”?
 
 ## According to Claude.ai
 
