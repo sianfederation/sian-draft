@@ -8,14 +8,7 @@
 
 <!-- Overrides the jekyll-theme-primer include of the same name (copied from v0.6.0) to add site-wide scripts and styles. -->
 <script>
-    MathJax = {
-        tex: {
-            inlineMath: [
-                ['$', '$'],
-                ['\\(', '\\)'],
-            ],
-        },
-    }
+    {% include mathjax-config.js %}
 </script>
 <script
     id="MathJax-script"
