@@ -43,6 +43,3 @@ The bulletin board might contain information about the static venues in its area
 The grid node will be connected to other grid nodes — probably via existing infrastructure such as the internet. This can allow information to traverse long distances. An establishment (a company, a government agency, a sports association, an interest association…) might advertise their existence or a social event on their local grid node/bulletin board, and have it spread from there to all boards within a specified radius or named region.
 
 The information should probably be time limited and/or volume limited so that it does not grow stale, but more importantly: so it doesn't require each grid node to maintain an entire internet's worth of data indefinitely.
-
-<script src="./admonitions.js"></script>
-<link rel="stylesheet" href="./admonitions.css">

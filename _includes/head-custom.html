@@ -1,0 +1,33 @@
+<!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+{% include head-custom-google-analytics.html %}
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" -->
+
+<!-- Overrides the jekyll-theme-primer include of the same name (copied from v0.6.0) to add site-wide scripts and styles. -->
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)'],
+            ],
+        },
+    }
+</script>
+<script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+></script>
+<script src="https://unpkg.com/lucide@latest" defer></script>
+<script>
+    {% include admonitions.js %}
+</script>
+<style>
+    {% include admonitions.css %}
+</style>
+
+<!-- end custom head snippets -->

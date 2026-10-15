@@ -49,6 +49,3 @@ This is where the gatekeeping happens. The main paths:
 So no — you can't just upload a draft to the RFC Editor and have it become an RFC. The RFC Editor's role is editorial/publication, not gatekeeping adoption; the actual "should this become an RFC" decision happens upstream (WG consensus + IESG, or ISE review for independent submissions). Every stream requires some form of review beyond just the author's say-so, though the bar and process differ a lot between "IETF consensus standard" and "independently reviewed informational RFC."
 
 Given the RFC series you've been drafting for the pseudonymous social network project, the **Independent Submission stream** is probably the most realistic real-world path if you ever wanted actual RFC numbers rather than just using the format for internal rigor — since there's no existing IETF WG chartered for this specific problem space, and starting one (BOF → charter → WG) is a much heavier lift than most independent projects take on.
-
-<script src="./admonitions.js"></script>
-<link rel="stylesheet" href="./admonitions.css">
