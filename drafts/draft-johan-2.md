@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041 MD033 -->
 <img src="../images/sian.svg" alt="SIÂN" style="float: right; margin: 10px;">
 
-# DRAFT-Johan-1: Self-Censored Content
+# DRAFT-Johan-2: Self-Censored Content
 
 The network should not prohibit adult content. In a free world you can share what you want to share. Of course — as proposed by [DRAFT-Johan-0](./draft-johan-0.md) — the nodes can decide not to partake in the spread.
 

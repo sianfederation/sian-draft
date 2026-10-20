@@ -1,19 +1,19 @@
 <!-- markdownlint-disable MD041 MD033 -->
 <img src="../images/sian.svg" alt="SIÂN" style="float: right; margin: 10px;">
 
-# RFC-4: Cost-of-Action — Spam Resistance and Accountability
+# DRAFT-Claude.ai-4: Cost-of-Action — Spam Resistance and Accountability
 
 **Status:** AI-Generated Draft
 **Category:** Standards Track
-**Depends on:** [RFC-0](./draft-claude.ai-0.md) (Principles P2, P5), [RFC-1](./draft-claude.ai-1.md) (Identity), [RFC-2](./draft-claude.ai-2.md) (Propagation)
+**Depends on:** [DRAFT-Claude.ai-0](./draft-claude.ai-0.md) (Principles P2, P5), [DRAFT-Claude.ai-1](./draft-claude.ai-1.md) (Identity), [DRAFT-Claude.ai-2](./draft-claude.ai-2.md) (Propagation)
 
 ## Abstract
 
-This document specifies a single **cost-of-action** primitive underlying two problems that would otherwise require separate mechanisms: broadcast spam (advertisers flooding grid nodes) and physical-safety accountability (pseudonymous avatars used to threaten or lure users into harm). Both problems share a root cause per [RFC-0](./draft-claude.ai-0.md) §5: making an action (creating an identity, sending a broadcast) too cheap makes abuse of that action too cheap. This RFC treats cost as a first-class, tunable protocol property rather than bolting on separate ad hoc limits per subsystem.
+This document specifies a single **cost-of-action** primitive underlying two problems that would otherwise require separate mechanisms: broadcast spam (advertisers flooding grid nodes) and physical-safety accountability (pseudonymous avatars used to threaten or lure users into harm). Both problems share a root cause per [DRAFT-Claude.ai-0](./draft-claude.ai-0.md) §5: making an action (creating an identity, sending a broadcast) too cheap makes abuse of that action too cheap. This RFC treats cost as a first-class, tunable protocol property rather than bolting on separate ad hoc limits per subsystem.
 
 ## 1. Action Classes and Required Cost Tier
 
-Actions are classified by risk, and each class specifies a minimum cost mechanism (§2) and, where relevant, a minimum identity tier ([RFC-1](./draft-claude.ai-1.md) §1.2):
+Actions are classified by risk, and each class specifies a minimum cost mechanism (§2) and, where relevant, a minimum identity tier ([DRAFT-Claude.ai-1](./draft-claude.ai-1.md) §1.2):
 
 |Class|Examples|Minimum identity tier|Minimum cost mechanism|
 |---|---|---|---|
@@ -23,11 +23,11 @@ Actions are classified by risk, and each class specifies a minimum cost mechanis
 
 ## 2. Cost Mechanisms (Local, No Central Authority)
 
-Per [RFC-0](./draft-claude.ai-0.md) P1, each mechanism is enforceable unilaterally by a receiving node/device with no coordination required.
+Per [DRAFT-Claude.ai-0](./draft-claude.ai-0.md) P1, each mechanism is enforceable unilaterally by a receiving node/device with no coordination required.
 
 ### 2.1 Local rate-limits (default BCP)
 
-Receiving nodes SHOULD apply a default rate-limit per sending DID (e.g., N broadcasts/hour), configurable per node operator. A suggested default is published as a community-amendable BCP ([RFC-0](./draft-claude.ai-0.md) §1) rather than mandated in this RFC.
+Receiving nodes SHOULD apply a default rate-limit per sending DID (e.g., N broadcasts/hour), configurable per node operator. A suggested default is published as a community-amendable BCP ([DRAFT-Claude.ai-0](./draft-claude.ai-0.md) §1) rather than mandated in this RFC.
 
 ### 2.2 Proof-of-work
 
@@ -39,15 +39,15 @@ A sender MAY post a refundable bond, forfeited if a threshold of receiving nodes
 
 ## 3. Accountability Without Full Deanonymization
 
-Per [RFC-0](draft-claude.ai-0.md) P2, pseudonymity and accountability are not treated as opposites; the goal is asymmetric reveal, not none-vs-full identification.
+Per [DRAFT-Claude.ai-0](draft-claude.ai-0.md) P2, pseudonymity and accountability are not treated as opposites; the goal is asymmetric reveal, not none-vs-full identification.
 
 ### 3.1 Per-avatar reputation is insufficient alone
 
-Because avatar creation is cheap under `did:key` ([RFC-1](draft-claude.ai-1.md) §1.2), an avatar with a damaged reputation can be discarded and replaced at no cost — reputation MUST NOT be the sole accountability mechanism for IRL-meetup-class actions.
+Because avatar creation is cheap under `did:key` ([DRAFT-Claude.ai-1](draft-claude.ai-1.md) §1.2), an avatar with a damaged reputation can be discarded and replaced at no cost — reputation MUST NOT be the sole accountability mechanism for IRL-meetup-class actions.
 
 ### 3.2 Graduated disclosure for meetup-class actions
 
-For actions in the IRL-meetup class, disclosure follows the concrete reveal ladder (R0–R7) specified in [RFC-6](draft-claude.ai-6.md), gated by mutual per-rung consent and identity-tier step-up as defined there. In summary: initial broadcast/match reveals coarse, categorical information only ([RFC-6](draft-claude.ai-6.md) R0–R2a); anything more specific — stated relational intent, relative proximity, direct communication, personal or contact information — requires explicit mutual consent per rung ([RFC-6](draft-claude.ai-6.md) R2b–R7), with identity-tier step-up ([RFC-1](draft-claude.ai-1.md) §1.2) enforced starting at [RFC-6](draft-claude.ai-6.md) R3/R4. Venue-operated grid nodes ([RFC-2](draft-claude.ai-2.md) §1) MAY enforce stricter local policy for any exchange that resolves to "meet at this venue," since the venue carries real-world liability exposure and has direct incentive to enforce it ([RFC-0](draft-claude.ai-0.md) P5).
+For actions in the IRL-meetup class, disclosure follows the concrete reveal ladder (R0–R7) specified in [DRAFT-Claude.ai-6](draft-claude.ai-6.md), gated by mutual per-rung consent and identity-tier step-up as defined there. In summary: initial broadcast/match reveals coarse, categorical information only ([DRAFT-Claude.ai-6](draft-claude.ai-6.md) R0–R2a); anything more specific — stated relational intent, relative proximity, direct communication, personal or contact information — requires explicit mutual consent per rung ([DRAFT-Claude.ai-6](draft-claude.ai-6.md) R2b–R7), with identity-tier step-up ([DRAFT-Claude.ai-1](draft-claude.ai-1.md) §1.2) enforced starting at [DRAFT-Claude.ai-6](draft-claude.ai-6.md) R3/R4. Venue-operated grid nodes ([DRAFT-Claude.ai-2](draft-claude.ai-2.md) §1) MAY enforce stricter local policy for any exchange that resolves to "meet at this venue," since the venue carries real-world liability exposure and has direct incentive to enforce it ([DRAFT-Claude.ai-0](draft-claude.ai-0.md) P5).
 
 ### 3.3 Non-forgeable cost as the common primitive
 
@@ -55,7 +55,7 @@ Sybil resistance (this section) and spam resistance (§2) are the same underlyin
 
 ### 3.4 Migration Statements are a Sybil-adjacent action
 
-[RFC-1](draft-claude.ai-1.md) §6.2 defines a Migration Statement allowing a `did:key` avatar to be replaced while carrying forward trust and reputation. Because this is a mechanism for _inheriting_ trust rather than earning it fresh, it MUST be treated as an action requiring cost, not free housekeeping:
+[DRAFT-Claude.ai-1](draft-claude.ai-1.md) §6.2 defines a Migration Statement allowing a `did:key` avatar to be replaced while carrying forward trust and reputation. Because this is a mechanism for _inheriting_ trust rather than earning it fresh, it MUST be treated as an action requiring cost, not free housekeeping:
 
 - A Migration Statement that carries forward a **damaged reputation** (per §2.3 bonding/flag history) SHOULD carry that damage to the new DID as well, not discard it — otherwise migration becomes a laundering path around reputation loss, defeating §3.1's premise entirely.
 - A Migration Statement that carries forward a **positive reputation** into a context requiring step-up verification (§3.2) SHOULD still require the identity-tier check appropriate to the new DID's method, not inherit an exemption from the old one.
@@ -63,8 +63,8 @@ Sybil resistance (this section) and spam resistance (§2) are the same underlyin
 
 ## 4. Security Considerations
 
-- No mechanism here is failsafe; PoW and bonding are both defeatable at sufficient attacker resource levels. This RFC raises the cost of abuse, it does not eliminate it, and the [RFC-0](draft-claude.ai-0.md) abstract's framing ("does this make the idea infeasible?") should be read against that limitation, not against a claim of solved safety.
-- Federated, locally-enforced rate limits mean policy will be inconsistent across nodes/operators. This is accepted per [RFC-0](draft-claude.ai-0.md) P1 but SHOULD be disclosed to users (e.g., "this node has looser broadcast limits than your home node").
+- No mechanism here is failsafe; PoW and bonding are both defeatable at sufficient attacker resource levels. This RFC raises the cost of abuse, it does not eliminate it, and the [DRAFT-Claude.ai-0](draft-claude.ai-0.md) abstract's framing ("does this make the idea infeasible?") should be read against that limitation, not against a claim of solved safety.
+- Federated, locally-enforced rate limits mean policy will be inconsistent across nodes/operators. This is accepted per [DRAFT-Claude.ai-0](draft-claude.ai-0.md) P1 but SHOULD be disclosed to users (e.g., "this node has looser broadcast limits than your home node").
 
 ## 5. Open Issues
 
