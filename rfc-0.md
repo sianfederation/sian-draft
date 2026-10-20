@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041 MD033 -->
 <img src="./images/sian.svg" alt="SIÂN" style="float: right; margin: 10px;">
 
-# RFC-0: Federated Interest-driven, Avatar-based Social Network
+# SIAN-RFC 0: Federated Interest-driven, Avatar-based Social Network
 
 **Status:** N/A
 **Category:** Informational

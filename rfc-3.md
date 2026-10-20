@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041 MD033 -->
 <img src="./images/sian.svg" alt="SIÂN" style="float: right; margin: 10px;">
 
-# RFC-3: Federation
+# SIAN-RFC 3: Federation
 
 **Status:** Inception
 **Category:** Governance
